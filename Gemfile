@@ -30,6 +30,11 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'devise'
 
+# Gem for spotify
+gem 'omniauth-oauth2', '~> 1.3.1'
+gem 'omniauth-spotify'
+
+
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
