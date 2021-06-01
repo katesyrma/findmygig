@@ -1,12 +1,19 @@
-.navbar-lewagon {
+.navbar {
   justify-content: space-between;
   background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
+  display: flex;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+
+.navbar .navbar-brand img {
+  width: 600px;
 }
+
+#user_name {
+  padding-top: 20px;
+}
+
