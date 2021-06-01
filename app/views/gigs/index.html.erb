@@ -1,0 +1,6 @@
+<h1>My Gigs</h1>
+<ul>
+  <% @gigs.each do |gig| %>
+    <li><%= link_to gig.artist_name, gig_path(gig) %></li>
+  <% end %>
+</ul>
