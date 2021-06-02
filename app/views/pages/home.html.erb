@@ -6,12 +6,13 @@
 
   <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h2>
 
-  <button id="spotify-connect"><i class="fab fa-spotify"></i> <%= link_to "Connect with Spotify", user_spotify_omniauth_authorize_path %> </button>
-
+  <button id="spotify-connect"><i class="fab fa-spotify" id="spotify-icon"></i> <%= link_to "Connect with Spotify", user_spotify_omniauth_authorize_path %> </button>
+  <%= link_to "Log out", destroy_user_session_path, method: :delete %>
 
 </div>
 
  <%= image_tag "concert.jpg", id: "concert-pic"%>
+
 
 </div>
 
