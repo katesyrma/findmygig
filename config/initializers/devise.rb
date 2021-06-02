@@ -12,6 +12,7 @@ Devise.setup do |config|
 
   config.omniauth :spotify, ENV["SPOTIFY_ID"], ENV["SPOTIFY_PWD"], scope: %w(
     playlist-read-private
+    playlist-read-collaborative
     user-read-private
     user-read-email
   ).join(' ')
