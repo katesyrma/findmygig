@@ -32,6 +32,14 @@ class GigsController < ApplicationController
     end
     @unique_artists = @artist_names.uniq
 
+    # -------- THE CODE IN THE VIEWS/GIGS/INDEX.HTML.ERB
+    # <h3>ALL MY ARTISTS</h3>
+    # <ul>
+    #   <% @unique_artists.each do |artist| %>
+    #   <li><%= artist %></li>
+    #   <% end %>
+    # </ul>
+
   # -----------------------------------------------------------------
   # ---------- Trying to get the top-artists of the user ------------
     @top_artists = me.top_artists
