@@ -34,6 +34,8 @@ gem 'devise'
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'omniauth-spotify'
 
+# Spotify wrapper
+gem 'rspotify'
 
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
