@@ -1,13 +1,25 @@
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   background: white;
   justify-content: space-around;
+  align-items: flex-end;
+  color: grey;
 }
 
 .social_media {
-  list-style: none
+  list-style: none;
 }
 
 .company {
   list-style: none
 }
+
