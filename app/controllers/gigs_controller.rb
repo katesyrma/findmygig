@@ -14,7 +14,29 @@ class GigsController < ApplicationController
         },
         'id' => current_user.uid
       })
-    @playlists = me.playlists #=> (Playlist array)
+    @playlists = me.playlists(limit: 50, offset: 0) #=> (Playlist array)
+
+  # -----------------------------------------------------------------
+  # ---Trying to access the artists from all the playlists' tracks --
+  # @playlists.last.tracks.last.artists #=> returns an array
+    @all_artists = []
+    @artist_names = []
+    @playlists.each do |playlist|
+      @tracks = playlist.tracks
+      @tracks.each do |track|
+        @all_artists << track.artists
+        @all_artists.each do |artist|
+          @artist_names << artist[0].name
+        end
+      end
+    end
+    @unique_artists = @artist_names.uniq
+
+  # -----------------------------------------------------------------
+  # ---------- Trying to get the top-artists of the user ------------
+    @top_artists = me.top_artists
+  # -----------------------------------------------------------------
+  # -----------------------------------------------------------------
   end
 
   def show
