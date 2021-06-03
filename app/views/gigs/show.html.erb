@@ -1,7 +1,26 @@
-<h1>Filtered Gigs</h1>
-<ul>
-    <li><%= @gig.artist_name %></li>
-</ul>
 
-<%= link_to "Back", gigs_path %>
+<div class="back"><%= link_to "Back", gigs_path%></div>
+
+<div class="gig-page-model-container">
+  <div class="gig-page">
+    <div class="gig-page-image-container">
+      <img src="https://i.guim.co.uk/img/media/e17d2fa76f422f4c36f173b82b26c2020b77ae04/0_190_3500_2100/master/3500.jpg?width=700&quality=85&auto=format&fit=max&s=7a0f317ed5eea207c744454acbf12d3a" alt="Moderat">
+    </div>
+    <div class="gig-description">
+      <h1><%= @gig.artist_name %></h1>
+      <h2><%= @gig.venue %></h2>
+      <h2><%= @gig.date %> | <%= @gig.time %></h2>
+
+
+     <!--  <h2><%= @gig.city %></h2>
+      <h2><%= @gig.country %></h2> -->
+      <h2>Price: <%= @gig.ticket_price %>€</h2>
+      <!-- <h2><%= @gig.venue_location %></h2> -->
+      <button class="btn">Tickets</button>
+      <a href="https://www.ticketmaster.se/event/jon-hopkins-polarity-tours-2021-biljetter/557455?language=en-us"></a>
+      <p><%= @gig.description%></p>
+    </div>
+  </div>
+</div>
+
 
