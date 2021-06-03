@@ -1,28 +1,7 @@
- <%= render 'shared/navbar' %>
+<%= render 'shared/navbar' %>
 
-<h1>My Gigs</h1>
-<ul>
-  <% @gigs.each do |gig| %>
-    <li><%= link_to gig.artist_name, gig_path(gig) %></li>
-    <p><%= gig.date %></p>
-    <p><%= gig.venue %></p>
-  <% end %>
-</ul>
-
-<h3>MY PLAYLISTS</h3>
-<ul>
-  <% @playlists.each do |playlist| %>
-    <li><%= playlist.name %></li>
-  <% end %>
-</ul>
-
-<h3>MY TOP ARTISTS</h3>
-<ol>
-  <% @top_artists.each do |artist| %>
-    <li><%= artist %></li>
-  <% end %>
-</ol>
-
-
+<%= render 'shared/main' %>
 
 <%= render 'shared/footer' %>
+
+

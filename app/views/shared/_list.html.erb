@@ -1,35 +1,19 @@
+<div class="tab-content" id="pills-tabContent">
 
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <ul>
+      <% @playlists.each do |playlist| %>
+        <li><%= playlist.name %></li>
+      <% end %>
+    </ul>
+  </div>
 
-<%# IF the toggle button is set on "Top Artists", a specifi logic should be
-applied in order to make the list display le name of the top artists %>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <ol>
+      <% @top_artists.each do |artist| %>
+        <li><%= artist %></li>
+      <% end %>
+    </ol>
+  </div>
 
-<ol>
-
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-
-</ol>
-
-<%# ELSE the toggle button is set on "Playlists", a specifi logic should be
-applied in order to make the list display le name of the playlists %>
-
-<ol>
-
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-
-</ol>
+</div>
