@@ -31,7 +31,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 
 # Gem for spotify
-gem 'omniauth-oauth2', '~> 1.3.1'
+gem 'omniauth-oauth2'
 gem 'omniauth-spotify'
 
 # Spotify wrapper
