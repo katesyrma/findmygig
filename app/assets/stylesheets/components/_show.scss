@@ -1,0 +1,13 @@
+.gig-page {
+  display: flex;
+}
+
+img {
+    flex: 0 0 50%;
+    max-width: 100%;
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 60px;
+    height: auto;
+    display: block;
+}

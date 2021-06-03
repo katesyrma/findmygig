@@ -1,7 +1,24 @@
-<h1>Filtered Gigs</h1>
-<ul>
-    <li><%= @gig.artist_name %></li>
-</ul>
+<div class="gig-page">
+  <div><img src="https://www.electronicbeats.net/app/uploads/fly-images/97125/Moderat_OlafHeine_EBArtists-2570x1440-c.jpg" alt="Moderat"></div>
+  <div id="gig-description">
+    <h1><%= @gig.artist_name %></h1>
+  <ul>
+    <li><%= @gig.city %></li>
+    <li><%= @gig.country %></li>
+    <li>Price: <%= @gig.ticket_price %></li>
+
+    <li><%= @gig.description %></li>
+    <li><%= @gig.date %></li>
+    <li><%= @gig.venue %></li>
+    <li><%= @gig.venue_location %></li>
+    <li><%= @gig.time %></li>
+</ul></div>
+
+
+
 
 <%= link_to "Back", gigs_path %>
+
+</div>
+
 
