@@ -10,40 +10,7 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
 
-  config.omniauth :spotify, ENV["SPOTIFY_ID"], ENV["SPOTIFY_PWD"], scope: %w(
-    playlist-read-private
-    playlist-read-collaborative
-    user-read-private
-    user-read-email
 
-    ugc-image-upload
-
-    user-read-recently-played
-    user-top-read
-    user-read-playback-position
-
-    user-read-playback-state
-    user-modify-playback-state
-    user-read-currently-playing
-
-    app-remote-control
-    streaming
-
-    playlist-modify-public
-    playlist-modify-private
-    playlist-read-private
-    playlist-read-collaborative
-
-    user-follow-modify
-    user-follow-read
-
-    user-library-modify
-    user-library-read
-
-    user-read-email
-    user-read-private
-
-  ).join(' ')
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
