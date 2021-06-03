@@ -19,18 +19,28 @@ class GigsController < ApplicationController
   # ----------------------------- A ---------------------------------
   # ---Trying to access the artists from all the playlists' tracks --
   # @playlists.last.tracks.last.artists #=> returns an array
-    @all_artists = []
-    @artist_names = []
-    @playlists.each do |playlist|
-      @tracks = playlist.tracks
-      @tracks.each do |track|
+      @all_artists = []
+      @artist_names = []
+    if params[:playlist_id].present?
+      @playlist = RSpotify::Playlist.find(current_user.uid, params[:playlist_id])
+      @playlist.tracks.each do |track|
         @all_artists << track.artists
         @all_artists.each do |artist|
           @artist_names << artist[0].name
         end
       end
+    else
+      @playlists.each do |playlist|
+        @tracks = playlist.tracks
+        @tracks.each do |track|
+          @all_artists << track.artists
+          @all_artists.each do |artist|
+            @artist_names << artist[0].name
+          end
+        end
+      end
     end
-    @unique_artists = @artist_names.uniq
+      @unique_artists = @artist_names.uniq
 
     # -------- THE CODE IN THE VIEWS/GIGS/INDEX.HTML.ERB
     # <h3>ALL MY ARTISTS</h3>
@@ -70,6 +80,13 @@ class GigsController < ApplicationController
 # ---------------------- PHOTO of the user ------------------------
 # RSpotify::User.find('kate.syrmakesi').images[0]["url"]
     @url = RSpotify::User.find(current_user.uid).images[0]["url"]
+
+# ------------------------------ F --------------------------------
+# ---------------------- GIGS filtered by PL  ---------------------
+    # if params[:playlist_id].present?
+    #   @playlist = RSpotify::Playlist.find(current_user.uid, params[:playlist_id])
+
+    # end
 
   end
 

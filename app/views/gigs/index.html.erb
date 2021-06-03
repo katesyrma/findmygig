@@ -1,18 +1,22 @@
  <%= render 'shared/navbar' %>
 
 <h1>My Gigs</h1>
-<ul>
-  <% @gigs.each do |gig| %>
-    <li><%= link_to gig.artist_name, gig_path(gig) %></li>
-    <p><%= gig.date %></p>
-    <p><%= gig.venue %></p>
-  <% end %>
-</ul>
+<% if @playlist_gigs.count == 0 %>
+  <p>Sorry, there are no scheduled gigs</p>
+<% else %>
+  <ul>
+    <% @playlist_gigs.each do |gig| %>
+      <li><%= link_to gig.artist_name, gig_path(gig) %></li>
+      <p><%= gig.date %></p>
+      <p><%= gig.venue %></p>
+    <% end %>
+  </ul>
+<% end %>
 
 <h3>MY PLAYLISTS</h3>
 <ul>
   <% @playlists.each do |playlist| %>
-    <li><%= playlist.name %></li>
+    <li><%= link_to playlist.name, gigs_path(playlist_id: playlist.id) %></li>
   <% end %>
 </ul>
 
