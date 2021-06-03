@@ -65,7 +65,12 @@ class GigsController < ApplicationController
     #     @top_gigs << gig
     #   end
     # end
-# -----------------------------------------------------------------
+
+# ------------------------------ E --------------------------------
+# ---------------------- PHOTO of the user ------------------------
+# RSpotify::User.find('kate.syrmakesi').images[0]["url"]
+    @url = RSpotify::User.find(current_user.uid).images[0]["url"]
+
   end
 
   def show
