@@ -9,10 +9,20 @@
   <% end %>
 </ul>
 
+<h3>MY PLAYLISTS</h3>
 <ul>
   <% @playlists.each do |playlist| %>
     <li><%= playlist.name %></li>
   <% end %>
 </ul>
+
+<h3>MY TOP ARTISTS</h3>
+<ol>
+  <% @top_artists.each do |artist| %>
+    <li><%= artist %></li>
+  <% end %>
+</ol>
+
+
 
 <%= render 'shared/footer' %>

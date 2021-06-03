@@ -1,0 +1,24 @@
+<div class="toggler" id="toggler-thing">
+
+    <button class="top green-active" id="top-thing">Top Artists</button>
+
+    <button class="play" id="play-thing">Playlists</button>
+
+</div>
+
+
+<%# Javascript code in order to make the color change %>
+
+
+<script>
+
+togglerThing = document.getElementById("toggler-thing");
+topThing = document.getElementById("top-thing");
+playThing = document.getElementById("play-thing");
+
+togglerThing.addEventListener("click", (event) => {
+  topThing.classList.toggle("green-active");
+  playThing.classList.toggle("green-active");
+})
+
+</script>
