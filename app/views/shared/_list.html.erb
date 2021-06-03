@@ -1,35 +1,16 @@
 
 
-<%# IF the toggle button is set on "Top Artists", a specifi logic should be
-applied in order to make the list display le name of the top artists %>
-
+<h5>MY PLAYLISTS</h5>
 <ol>
-
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-  <li><strong>Artist Name</strong> 1.000 plays</li>
-
+  <% @playlists.each do |playlist| %>
+    <li><%= playlist.name %></li>
+  <% end %>
 </ol>
 
-<%# ELSE the toggle button is set on "Playlists", a specifi logic should be
-applied in order to make the list display le name of the playlists %>
-
+<h5>MY TOP ARTISTS</h5>
 <ol>
-
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-  <li><strong>Plailist Name</strong> 1.000 plays</li>
-
+  <% @top_artists.each do |artist| %>
+    <li><%= artist.name %></li>
+  <% end %>
 </ol>
+

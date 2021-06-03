@@ -1,4 +1,6 @@
- <%= render 'shared/navbar' %>
+<%= render 'shared/navbar' %>
+
+<%= render 'shared/sidebar' %>
 
 <h1>My Gigs</h1>
 <ul>
@@ -8,21 +10,6 @@
     <p><%= gig.venue %></p>
   <% end %>
 </ul>
-
-<h3>MY PLAYLISTS</h3>
-<ul>
-  <% @playlists.each do |playlist| %>
-    <li><%= playlist.name %></li>
-  <% end %>
-</ul>
-
-<h3>MY TOP ARTISTS</h3>
-<ol>
-  <% @top_artists.each do |artist| %>
-    <li><%= artist.name %></li>
-  <% end %>
-</ol>
-
 
 
 <%= render 'shared/footer' %>
