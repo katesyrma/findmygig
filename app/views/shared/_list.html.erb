@@ -1,16 +1,14 @@
 
-
-<h5>MY PLAYLISTS</h5>
-<ol>
+<h3>MY PLAYLISTS</h3>
+<ul>
   <% @playlists.each do |playlist| %>
     <li><%= playlist.name %></li>
   <% end %>
-</ol>
+</ul>
 
-<h5>MY TOP ARTISTS</h5>
+<h3>MY TOP ARTISTS</h3>
 <ol>
   <% @top_artists.each do |artist| %>
-    <li><%= artist.name %></li>
+    <li><%= artist %></li>
   <% end %>
 </ol>
-
