@@ -1,0 +1,14 @@
+<div class="wrapper">
+
+  <% @gigs.each do |gig| %>
+    <div class="gig_card">
+      <img src="https://source.unsplash.com/random/200x100" alt="">
+      <div class="gig_card-infos">
+          <p><strong><%= gig.artist_name %></strong></p>
+          <p><%= gig.venue %></p>
+          <p><%= gig.venue_location %> </p>
+          <p><%= gig.city %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

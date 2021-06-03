@@ -1,14 +1,7 @@
 <%= render 'shared/navbar' %>
 
-<%= render 'shared/sidebar' %>
-
-<h1>My Gigs</h1>
-<ul>
-  <% @gigs.each do |gig| %>
-    <li><%= link_to gig.artist_name, gig_path(gig) %></li>
-    <p><%= gig.date %></p>
-    <p><%= gig.venue %></p>
-  <% end %>
-</ul>
+<%= render 'shared/main' %>
 
 <%= render 'shared/footer' %>
+
+
