@@ -11,8 +11,9 @@
       <h2><%= @gig.date %> | <%= @gig.time %></h2>
       <h2>Price: <%= @gig.ticket_price %>€</h2>
       <!-- <h2><%= @gig.venue_location %></h2> -->
-      <button class="btn">Tickets</button>
-      <a href="https://www.ticketmaster.se/event/jon-hopkins-polarity-tours-2021-biljetter/557455?language=en-us"></a>
+      <!-- <button class="btn">Tickets</button> -->
+      <%= link_to "Tickets", "https://www.ticketmaster.se/event/jon-hopkins-polarity-tours-2021-biljetter/557455?language=en-us", :target => "_blank", class: "btn"%>
+
       <p><%= @gig.description%></p>
     </div>
   </div>

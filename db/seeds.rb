@@ -8,6 +8,8 @@
 
 require 'csv'
 
+Gig.destroy_all
+
 csv_text = File.read(Rails.root.join('lib', 'seeds', 'gig_seeds.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 
@@ -23,6 +25,7 @@ csv.each do |row|
     t.venue = row['Venue']
     t.venue_location = row['Venue Location']
     t.time = row['Time']
+    t.image_url = row['Image URL']
 
     t.save
   end
