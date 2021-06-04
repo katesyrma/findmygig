@@ -1,36 +1,61 @@
-#home-set {
-  display: flex;
 
-  h2 {
-    margin-top: 70px;
-    padding-right: 50px;
-    padding-left: 20px;
-  }
-}
-
-#logo-pic {
-    width: 1000px;
-    padding-top: 10px;
-    padding-left: 20px;
-  }
-
-#concert-pic {
+.home-page-container {
+  position: relative;
+  text-align: center;
+  color: white;
   height: 100%;
-  width: 700px;
 }
 
-.spotify-icon {
-  color: #1ed05e;
+.homepage img {
+  background-image: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  // position: fixed;
 }
+
+.home-page-content h1{
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: Bungee Outline;
+  font-size: 150px;
+  color: #2CFA59;
+  margin-left: 35px;
+  font-weight: normal;
+}
+
+.home-page-content p {
+  position: absolute;
+  top: 8px;
+  center: 16px;
+  margin-top: 150px;
+  margin-left: 900px;
+  color: #2CFA59;
+  font-size: 50px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
 
 #spotify-connect {
+  position: fixed;
+  bottom: 8px;
+  left: 16px;
   width: 400px;
-  margin-top: 100px;
-  margin-left: 50px;
-  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  font-size: 25px;
   border-radius: 30px;
   padding: 20px;
-  background-color: white;
-  border: 0.5px solid grey;
+  color: #06E336;
+  border: 0.5px solid ;
+  opacity: 0.9;
+}
 
+
+
+a, a:hover, a:focus {
+    text-decoration: none !important;
+    color: unset;
 }
