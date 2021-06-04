@@ -1,6 +1,5 @@
 
 <div class="back"><%= link_to "Back", gigs_path%></div>
-
 <div class="gig-page-model-container">
   <div class="gig-page">
     <div class="gig-page-image-container">
@@ -8,12 +7,8 @@
     </div>
     <div class="gig-description">
       <h1><%= @gig.artist_name %></h1>
-      <h2><%= @gig.venue %></h2>
+      <h2><%= @gig.venue %><h2> <%= @gig.city %> | <%= @gig.country %></h2></h2>
       <h2><%= @gig.date %> | <%= @gig.time %></h2>
-
-
-     <!--  <h2><%= @gig.city %></h2>
-      <h2><%= @gig.country %></h2> -->
       <h2>Price: <%= @gig.ticket_price %>€</h2>
       <!-- <h2><%= @gig.venue_location %></h2> -->
       <button class="btn">Tickets</button>
