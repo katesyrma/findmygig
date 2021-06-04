@@ -1,10 +1,9 @@
-<div class="wrapper">
   <% if @playlist_gigs.count == 0 %>
     <p>Sorry, there are no scheduled gigs</p>
   <% else %>
     <% @playlist_gigs.each do |gig| %>
       <div class="gig_card">
-        <img src="https://source.unsplash.com/random/200x100" alt="">
+        <img src="https://static.dw.com/image/18920718_403.jpg" alt="">
         <div class="gig_card-infos">
             <h4><strong><%= link_to gig.artist_name, gig_path(gig) %></strong></h4>
             <h5><%= gig.city %></h5>
@@ -14,4 +13,3 @@
       </div>
     <% end %>
   <% end %>
-</div>
