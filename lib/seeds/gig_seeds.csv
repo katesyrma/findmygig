@@ -1,40 +1,43 @@
-Artist Name,City,Country,Ticket Price,Description,Date,Venue,Venue Location,Time
+Artist Name,City,Country,Ticket Price,Description,Date,Venue,Venue Location,Time,Image URL
 Cat Power,Berlin,Germany,33,"Charlyn Marie Marshall better known by her stage name Cat Power is an experimental indie rock artist from Atlanta, Georgia.",03/06/2022,Tempodrom,"Möckernstraße 10
 10963
-Berlin, Germany",8
+Berlin, Germany",8,https://c4.wallpaperflare.com/wallpaper/217/251/706/cat-power-wallpaper-preview.jpg
 Clap Your Hands Say Yeah,Berlin,"Germany ",21,Clap Your Hands Say Yeah is an indie rock originally from Philadelphia which currently consists of Alec Ounsworth and Matt Wong.,12/10/2021,Frannz Club,"Kulturbrauerei, Schönhauser Allee 36
 10435
-Berlin, Germany",9
+Berlin, Germany",9,https://www.nme.com/wp-content/uploads/2016/09/ClapYourHandsEM151210.jpg
 Dope Lemon,Milan,"Italy ",25,"Angus Stone (born 27 April 1986) is an Australian folk singer-songwriter, record producer and audio engineer. He is one half of the musical sibling duo Angus & Julia Stone, with whom he has released four studio albums. His debut solo album, Smoking Gun, was released in April 2009 under the pseudonym Lady of the Sunshine, and reached the top 50 on the ARIA Albums Chart. His second solo album, Broken Brights, was released under his name on 13 July 2012 and peaked at number 2. Stone currently records under the moniker of Dope Lemon.",16/06/2021,Santeria Toscana 31,"Viale Toscana 31
 20136
-Milan, Italy",8
+Milan, Italy",8,https://www.ohestee.com/wp-content/uploads/2020/12/Dope-Lemon-Shares-The-Nostalgic-Kids-Fallin-In-Love.jpg
 Harry Styles,"Toronto ","Canada ",179,"Harry Edward Styles (born 1 February 1994) is an English singer, songwriter, and actor. His musical career began in 2010 as a solo contestant on the British ...",29/09/2021,Scotiabank Arena,"40 Bay Street
 M5J 2L2
-Toronto, ON, Canada",8
+Toronto, ON, Canada",8,https://i.pinimg.com/736x/c6/6b/4b/c66b4b0b4aa16e6e859c01de5acffb12.jpg
 Efterklangs,Askeby,Denmark,30,Join us June 26th 2021 on the Danish island of Møn for a day full of music and socialising for the very first edition of Efterklang’s Sommertræf!,26/06/2021,Saftstationen,"Fanefjord Kirkevej 35
 4792
-Askeby, Denmark",5
+Askeby, Denmark",5,https://thepartae.com/wp-content/uploads/2019/08/EFTERKLANG-1-1.jpg
 Ólafur Arnalds,"San Francisco, CA",USA,55,"Award-winning artist, composer and producer Ólafur Arnalds is back on the road with brand new material. After a triumphant return to the stage in 2018, the re:act tour represents Ólafur's final set of shows after nearly three years of touring.",07/11/2021,The Warfield,"982 Market Street
-San Francisco, CA 94102",8
-METZ,Barcelona,Spain,22,"METZ is a Canadian punk rock band formed in 2008 in Ottawa and currently based in Toronto.[2][3][4] The band consists of guitarist and vocalist Alex Edkins, bassist Chris Slorach and drummer Hayden Menzies.[5]",21/04/2022,La de Apolo,"Carrer Nou de la Rambla, 107, 08004 Barcelona, Spain",9
+San Francisco, CA 94102",8,https://www.magneticmag.com/.image/t_share/MTc0OTU5NjA2MDM5MDYyMTg2/olafur-arnalds-some-kind-of-peace-albumart-2048x2048.jpg
+METZ,Barcelona,Spain,22,"METZ is a Canadian punk rock band formed in 2008 in Ottawa and currently based in Toronto.[2][3][4] The band consists of guitarist and vocalist Alex Edkins, bassist Chris Slorach and drummer Hayden Menzies.[5]",21/04/2022,La de Apolo,"Carrer Nou de la Rambla, 107, 08004 Barcelona, Spain",9,https://www.interviewmagazine.com/wp-content/uploads/2012/12/img-metz_153237367395.jpg
 Feu Chatterton,Rouen,France,32,"Feu! Chatterton is a French rock band from Paris formed in 2011. Their name is a homage to the poet Thomas Chatterton. In 2015, they released a first album, Ici le jour (a tout enseveli), praised by critics.[1] The band is composed of Antoine Wilson (bass), Arthur Teboul (vocals), Clément Doumic (guitars and keyboards), Raphaël De Pressigny (drums) and Sébastien Wolf (guitars and keyboards).",20/11/2021,LE 106,"Allée François Mitterrand
 76100
-Rouen, France",8
+Rouen, France",8,https://www.europavox.com/wp-content/uploads/2018/04/Feu-Chatterton-2021-c-Antoine-Henault.jpg
 Róisín Murphy,Hamburg,"Germany ",40,"Róisín Murphy is a singer, songwriter and producer hailing from Arklow, County Wicklow, Ireland who was born on the 5th of July 1973. She was originally the lead singer of the electronica duo Moloko, but went solo in …",04/10/2021,Docks,"Spielbudenplatz 19
 20359
-Hamburg, Germany",8
-Jon Hopkins,"Stockholm ","Sweden ",45,"It is with great pleasure that Jon Hopkins announces Polarity – a new tour for 2020 – which follows on from the incredibly successful Singularity tour, where he performed sold-out headline live shows, festival dates and DJ appearances across the globe.",25/11/2021,Göta Lejon,"Götgatan 55, 116 21 Stockholm, Sverige",8
+Hamburg, Germany",8,https://d12xfkzf9kx8ij.cloudfront.net/a0K5J000000ZJzQUAW_original.jpg
+Jon Hopkins,"Stockholm ","Sweden ",45,"It is with great pleasure that Jon Hopkins announces Polarity – a new tour for 2020 – which follows on from the incredibly successful Singularity tour, where he performed sold-out headline live shows, festival dates and DJ appearances across the globe.",25/11/2021,Göta Lejon,"Götgatan 55, 116 21 Stockholm, Sverige",8,https://imgproxy.ra.co/_/quality:100/plain//images/profiles/lg/jonhopkins.jpg
 The Hold Steady,"Denver, CO",USA,40,"The Hold Steady is an indie rock band from Brooklyn, New York, US that formed in 2004. The band is highly influenced by classic rock and their lyrics are comprised of a strong sense of story telling.",19/06/2021,Bluebird Theater,"3317 E. Colfax Ave
 80206
-Denver, CO, US",8
+Denver, CO, US",8,https://imagebee.org/music/hold-steady/hold-steady-4-2048x1536.jpg
 Chromatics,Frankfurt,"Germany ",40,"Chromatics is an American electronic music band from Portland, Oregon, formed in 2001. The band consists of Ruth Radelet (vocals, guitar, synthesizer), Adam Miller (guitar, vocoder), Nat Walker (drums, synthesizer), and Johnny Jewel (producer, multi-instrumentalist).",02/06/2021,Zoom,"Brönnerstraße 5-9
 60313
-Frankfurt, Germany",8
+Frankfurt, Germany",8,https://www.electricityclub.co.uk/wp-content/uploads/2019/10/CHROMATICS-Ruth-landscape.jpg
 Apparat,Tallinn," Estonia",50,"Apparat is a producer and musician hailing from Quedlinburg, East Germany who was born on June 27th, 1978. Since his debut in 1996 he has become one of the most respected and prolific names in ambient music, with ten …",04/09/2021,Helitehas,"Madara 22a
 10613
-Tallinn, Estonia",8
+Tallinn, Estonia",8,https://fanart.tv/fanart/music/dc3dbfc1-f1f1-49c6-9d7c-425fabf3ae12/artistthumb/apparat-4ffc4702acee9.jpg
 Mulatu Astatke,Krakow,Poland,50,"Hailing from the western Ethiopian city of Jimma, young Astatke was sent by his family to study engineering at Lindisfarne College in Wales in the 1950s, however went on to graduate with a degree in music, later studying at the Trinity College of Music in London, UK. In the 1960s the percussionist moved to Boston, U.S. and studied vibraphone and percussion at the Berklee College of Music, where he explored his interest in Latin jazz.",24/10/2021,Kwadrat,"Skarżyńskiego, 1
 31-866
-Krakow, Poland",8
-Destroyer,London,England,23,"Dan Bejar has announced that his thirteenth album as Destroyer, titled Have We Met, will be released on 31st January 2020 via Dead Oceans. This event was originally due to take place at Village Underground on 5th May 2020. Due to the current climate and government restrictions, we are sorry this concert will not go ahead on its original date. Existing tickets are now valid for Destroyer's show at EartH on 10th of July 2021.",10/07/2021,EartH,"11 Stoke Newington Rd, London N16 8BH, UK",8
-Bicep,London,England,30,Belfast-born/London-based duo Bicep (Matt McBriar and Andy Ferguson) are childhood friends who bonded over a shared love of dance music. ... Belfast-born/London-based duo Bicep (Matt McBriar and Andy Ferguson) are childhood friends who bonded over a shared love of dance music.,09/09/2021,O2 Acedemy Brixton,"211 Stockwell Rd, London SW9 9SL, United Kingdom",8
+Krakow, Poland",8,https://roundhouse-assets.s3.amazonaws.com/assets/Image/8502-fitandcrop-1200x681.jpg
+Destroyer,London,England,23,"Dan Bejar has announced that his thirteenth album as Destroyer, titled Have We Met, will be released on 31st January 2020 via Dead Oceans. This event was originally due to take place at Village Underground on 5th May 2020. Due to the current climate and government restrictions, we are sorry this concert will not go ahead on its original date. Existing tickets are now valid for Destroyer's show at EartH on 10th of July 2021.",10/07/2021,EartH,"11 Stoke Newington Rd, London N16 8BH, UK",8,https://lastfm.freetls.fastly.net/i/u/ar0/9d87837b9d057abb5037e52fc3400c1a.jpg
+Bicep,London,England,30,Belfast-born/London-based duo Bicep (Matt McBriar and Andy Ferguson) are childhood friends who bonded over a shared love of dance music. ... Belfast-born/London-based duo Bicep (Matt McBriar and Andy Ferguson) are childhood friends who bonded over a shared love of dance music.,09/09/2021,O2 Acedemy Brixton,"211 Stockwell Rd, London SW9 9SL, United Kingdom",8,https://wearerebelbass.com/wp-content/uploads/2017/08/maxresdefault-1.jpg
+Adriatique,Orange,France,25,"Electronic music producer and DJ duo from Zürich, Switzerland, consisting of Adrian Shala and Adrian Schweizer. They first met in 2008 and have been producing and playing electronic music as Adriatique since 2009,[1] mainly house and techno.",21/08/2021,Théâtre Antique d'Orange,"Rue Madeleine Roch, 84100",8,https://www.electronicbeats.net/app/uploads/2018/11/2018-Adriatique-Press-02a-color-Raphael-Rapior.jpg
+Jason Derulo,Portimão,Portugal,42,"Jason Derulo is an American singer, songwriter and dancer who has sold more than 30 million singles and 11 platinum singles, including “Wiggle,” “Talk Dirty” and “In My Head.” As of July 2020, he has more than 56 million combined followers on all his social media platforms",24/08/2021,Praia da Rocha,"Praia da Rocha, Portimão, Portugal",9,https://vistapointe.net/images/jason-derulo-5.jpg
+Black Eyed Peas,Malmö,Sweden,48,"American musical group with an eclectic range of styles encompassing hip-hop, dance, and pop. The group expanded beyond their conscious rap roots to become one of the most commercially successful pop groups of this century.",30/07/2021,Tallriken,"Pildammsparken, Malmö",8,https://www.curacaonorthseajazz.com/-/media/northseajazz/curacao/program/2019/bep.jpg

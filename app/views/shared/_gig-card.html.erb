@@ -2,14 +2,16 @@
     <p>Sorry, there are no scheduled gigs</p>
   <% else %>
     <% @playlist_gigs.each do |gig| %>
+    <%= link_to gig_path(gig) do %>
       <div class="gig_card">
-        <img src="https://static.dw.com/image/18920718_403.jpg" alt="">
+        <%= image_tag gig.image_url %>
         <div class="gig_card-infos">
-            <h4><strong><%= link_to gig.artist_name, gig_path(gig) %></strong></h4>
+            <h4><strong><%= gig.artist_name %></strong></h4>
             <h5><%= gig.city %></h5>
             <h6><%= gig.date %></h6>
             <p><%= gig.venue %></p>
         </div>
       </div>
+      <% end %>
     <% end %>
   <% end %>
