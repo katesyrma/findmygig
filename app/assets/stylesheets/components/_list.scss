@@ -1,3 +1,18 @@
-#pills-tabContent {
-  overflow: scroll;
+.list-side {
+  list-style: none;
+    a {
+      text-decoration: none;
+      color: black;
+      transition: 0s font-weight;
+    }
+    a:hover {
+      font-weight: bold;
+      transition-delay:100ms;
+    }
+}
+
+.side-list {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-right: 10px;
 }

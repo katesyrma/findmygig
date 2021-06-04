@@ -1,3 +1,7 @@
 .gigs-container {
-  overflow: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: min-content;
+  width: 100%;
+  margin-right: 10px;
 }

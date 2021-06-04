@@ -1,19 +1,20 @@
-<div class="tab-content" id="pills-tabContent">
+<!-- <div class="tab-content" id="pills-tabContent"> -->
 
-  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-    <ul>
+  <!-- <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> -->
+    <div class="side-list">
+
       <% @playlists.each do |playlist| %>
-        <li><%= link_to playlist.name, gigs_path(playlist_id: playlist.id) %></li>
+      <p class="list-side"><%= link_to playlist.name, gigs_path(playlist_id: playlist.id) %></p>
       <% end %>
-    </ul>
-  </div>
+  <!-- </div> -->
 
-  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-    <ol>
+  <!-- <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> -->
+
       <% @top_artists.each do |artist| %>
-        <li><%= artist %></li>
+        <p class="list-side"><%= artist %></p>
       <% end %>
-    </ol>
-  </div>
 
-</div>
+    </div>
+  <!-- </div> -->
+
+<!-- </div> -->
