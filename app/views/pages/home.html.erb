@@ -7,7 +7,10 @@
   </div>
 
   <button id="spotify-connect"><i class="fab fa-spotify" id="spotify-icon"></i> <%= link_to "Connect with Spotify", user_spotify_omniauth_authorize_path %> </button>
+
   <%=  link_to "**********", destroy_user_session_path, method: :delete, class: "logout" %>
+
 </div>
+
 
 

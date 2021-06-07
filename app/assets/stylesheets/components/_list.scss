@@ -12,7 +12,19 @@
 }
 
 .side-list {
+  height: 80vh;
   margin-top: 10px;
   margin-left: 10px;
   padding-right: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 300px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }

@@ -1,5 +1,5 @@
   <% if @playlist_gigs.count == 0 %>
-  <p>Sorry, there are no scheduled gigs</p>
+    <%= render 'shared/no-gigs' %>
   <% else %>
   <% @playlist_gigs.each do |gig| %>
   <div data-controller='remote'

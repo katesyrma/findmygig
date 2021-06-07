@@ -1,6 +1,6 @@
 .toggler {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid grey;
   width: max-content;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -22,3 +22,10 @@
   border: 1px solid white;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
