@@ -9,17 +9,19 @@ export default class extends Controller {
 
   view(e) {
     e.preventDefault()
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${window.scrollY}px`;
     if (e.target !== this.wrapperTarget &&
       !this.wrapperTarget.contains(e.target)) return
 
-      console.log("hello world")
     this.getContent(this.url)
     this.wrapperTarget.insertAdjacentHTML('afterbegin', this.template())
   }
 
   close(e) {
     e.preventDefault()
-
+    document.body.style.position = '';
+    document.body.style.top = '';
     if (this.hasContainerTarget) { this.containerTarget.remove() }
   }
 
@@ -50,14 +52,13 @@ getContent(url) {
 template() {
   return `
   <div data-target='remote.container'>
-  <div class='modal-wrapper' data-target='remote.background' data-action='click->remote#closeBackground'>
-  <div class='modal-content' data-target='remote.content'>
-  </div>
-
-  <button data-action='click->remote#close' class='close-button'>
-  close
-  </button>
-  </div>
+    <div class='modal-wrapper' data-target='remote.background' data-action='click->remote#closeBackground'>
+      <div class='modal-content'>
+      <button data-action='click->remote#close' class='close-button'>Close</button>
+      <div data-target='remote.content' >
+      </div>
+      </div>
+    </div>
   </div>
   `
 }
