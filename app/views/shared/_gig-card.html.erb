@@ -1,17 +1,23 @@
   <% if @playlist_gigs.count == 0 %>
     <%= render 'shared/no-gigs' %>
   <% else %>
-    <% @playlist_gigs.each do |gig| %>
-    <%= link_to gig_path(gig) do %>
-      <div class="gig_card">
-        <%= image_tag gig.image_url %>
-        <div class="gig_card-infos">
-            <h4><strong><%= gig.artist_name %></strong></h4>
-            <h5><%= gig.city %></h5>
-            <h6><%= gig.date %></h6>
-            <p><%= gig.venue %></p>
-        </div>
-      </div>
-      <% end %>
-    <% end %>
+  <% @playlist_gigs.each do |gig| %>
+  <div data-controller='remote'
+  data-target='remote.wrapper'
+  data-action='keydown@window->remote#closeWithKeyboard'
+  data-remote-url='<%= gig_path(gig, inline: true) %>'>
+  <%= link_to gig_path(gig), "data-action": 'click->remote#view' do %>
+  <div class="gig_card">
+
+    <%= image_tag gig.image_url %>
+    <div class="gig_card-infos">
+      <h4><strong><%= gig.artist_name %></strong></h4>
+      <h5><%= gig.city %></h5>
+      <h6><%= gig.date %></h6>
+      <p><%= gig.venue %></p>
+    </div>
+  </div>
   <% end %>
+</div>
+<% end %>
+<% end %>
