@@ -91,6 +91,7 @@ class GigsController < ApplicationController
   end
 
   def show
+  render layout: false if params[:inline] == 'true'
   end
 
   private
