@@ -1,5 +1,20 @@
-<div class="gigs-container">
+<% if @playlist_gigs.count == 0 %>
 
-<%= render 'shared/gig-card' %>
+  <div class="no-gigs">
 
-</div>
+    <div>
+    <p>Sorry, there are no scheduled gigs</p>
+    <img src="https://memberdata.s3.amazonaws.com/hi/hitsdd/photos/hitsdd_photo_gal__photo_104004346.png" alt="drop the mic">
+    </div>
+
+  </div>
+
+<% else %>
+
+  <div class="gigs-container">
+
+    <%= render 'shared/gig-card' %>
+
+  </div>
+
+<% end %>

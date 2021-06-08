@@ -1,14 +1,20 @@
 .list-side {
   list-style: none;
-    a {
+    a p {
       text-decoration: none;
       color: black;
-      transition: 0s font-weight;
+      transition: 0s font-weight background-color;
+      padding: 10px;
     }
     a:hover {
       font-weight: bold;
-      transition-delay: 50ms;
+      transition-delay:50ms;
+      background-color: #2CFA59;
     }
+}
+
+.green-stop {
+  background-color: #2CFA59 !important;
 }
 
 .side-list {
@@ -19,6 +25,12 @@
   overflow: hidden;
   overflow-y: scroll;
   width: 300px;
+}
+
+.grey-out {
+    a {
+      color: grey;
+    }
 }
 
 .hide {
