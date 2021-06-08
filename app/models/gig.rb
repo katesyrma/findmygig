@@ -4,3 +4,4 @@ class Gig < ApplicationRecord
     against: [:city, :artist_name],
     using: { tsearch: { prefix: true } }
 end
+
