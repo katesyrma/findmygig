@@ -10,7 +10,7 @@
     <div class="gig_card-infos">
       <h4><strong><%= gig.artist_name %></strong></h4>
       <h5><%= gig.city %></h5>
-      <h6><%= gig.date %></h6>
+      <h6><%= gig.date.strftime("%b %d, %Y")%></h6>
       <p><%= gig.venue %></p>
     </div>
   </div>

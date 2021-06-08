@@ -3,4 +3,20 @@
   bottom: 16px;
   right: 16px;
   z-index: 1000;
+  font-family: Roboto;
+  background-color:#2CFA59;
+  border-color: #2CFA59;
+  color: black;
+  animation: autoHide 0s ease-in 4s forwards;
+}
+
+
+
+@keyframes autoHide {
+to {
+  width:0;
+  height:0;
+  overflow:hidden;
+  opacity:0;
+   }
 }
