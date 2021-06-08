@@ -3,12 +3,12 @@
 <div class="gig-page-model-container">
   <div class="gig-page">
     <div class="gig-page-image-container">
-      <img src="https://i.guim.co.uk/img/media/e17d2fa76f422f4c36f173b82b26c2020b77ae04/0_190_3500_2100/master/3500.jpg?width=700&quality=85&auto=format&fit=max&s=7a0f317ed5eea207c744454acbf12d3a" alt="Moderat">
+      <%= image_tag @gig.image_url%>
     </div>
     <div class="gig-description">
       <h1><%= @gig.artist_name %></h1>
       <h2><%= @gig.venue %><h2> <%= @gig.city %> | <%= @gig.country %></h2></h2>
-      <h2><%= @gig.date %> | <%= @gig.time %></h2>
+      <h2><%= @gig.date.strftime("%a, %b %d %Y") %> | <%= @gig.time.strftime(" %l:%M %p %Z") %></h2>
       <h2>Price: <%= @gig.ticket_price %>€</h2>
       <!-- <h2><%= @gig.venue_location %></h2> -->
       <!-- <button class="btn">Tickets</button> -->
