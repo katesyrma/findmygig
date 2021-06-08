@@ -3,7 +3,9 @@ class GigsController < ApplicationController
   before_action :set_gig, only: [:show]
 
   def index
+
     @gigs = Gig.all
+
     # me = RSpotify::User.find(current_user.uid)
     @playlists = current_user.playlists #=> (Playlist array)
 
@@ -13,14 +15,6 @@ class GigsController < ApplicationController
 
     @unique_artists = current_user.playlist_artist_names(params[:playlist_id])
 
-    # -------- THE CODE IN THE VIEWS/GIGS/INDEX.HTML.ERB
-    # <h3>ALL MY ARTISTS</h3>
-    # <ul>
-    #   <% @unique_artists.each do |artist| %>
-    #   <li><%= artist %></li>
-    #   <% end %>
-    # </ul>
-
 # ------------------------------- B -------------------------------
 # ---------- Trying to get the top-artists of the user ------------
     @top_artists = current_user.top_artists
@@ -29,34 +23,36 @@ class GigsController < ApplicationController
 # ------------------------------- C -------------------------------
 # ---- FILTERING THE GIGS vs all PL artists (@unique_artists) ----
     # @playlist_gigs = []
-    @playlist_gigs = Gig.where(artist_name: @unique_artists)
-    # @gigs.each do |gig|
-    #   if @unique_artists.include?(gig.artist_name)
-    #     @playlist_gigs << gig
-    #   end
+    # if params[:query].present?
+    #   # cutting the params before "," and getting only the clear city
+    #   city_only = params[:query].split(",").first
+    #   @playlist_gigs = Gig.where(artist_name: @unique_artists, city: city_only)
+    # else
+    #   @playlist_gigs = Gig.where(artist_name: @unique_artists)
     # end
+
+    @query = "#{params[:city]} #{params[:artist_name]}"
+    if @query.present?
+      @playlist_gigs = Gig.search_by_city_and_artist_name(@query)
+    elsif params[:search].present?
+      @playlist_gigs = Gig.where('date BETWEEN ? AND ?', params[:search][:starts_at].split(" to ")[0], params[:search][:starts_at].split(" to ")[1])
+      # Comment.where('created_at BETWEEN ? AND ?', @selected_date.beginning_of_day, @selected_date.end_of_day)
+    else
+      @playlist_gigs = Gig.where(artist_name: @unique_artists)
+    end
+
+    # @playlist_gigs = Gig.where(artist_name: @unique_artists)
 
 # ------------------------------ D --------------------------------
 # ---- FILTERING the gigs vs top-artists (@top_artists) -----------
     # @top_gigs = []
     @top_gigs = Gig.where(artist_name: @top_artists)
-    # @gigs.each do |gig|
-    #   if @top_artists.include?(gig.artist_name)
-    #     @top_gigs << gig
-    #   end
-    # end
 
 # ------------------------------ E --------------------------------
 # ---------------------- PHOTO of the user ------------------------
 # RSpotify::User.find('kate.syrmakesi').images[0]["url"]
     @url = RSpotify::User.find(current_user.uid).images[0]["url"]
 
-# ------------------------------ F --------------------------------
-# ---------------------- GIGS filtered by PL  ---------------------
-    # if params[:playlist_id].present?
-    #   @playlist = RSpotify::Playlist.find(current_user.uid, params[:playlist_id])
-
-    # end
 
   end
 
