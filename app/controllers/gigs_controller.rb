@@ -5,42 +5,13 @@ class GigsController < ApplicationController
   def index
     @gigs = Gig.all
     # me = RSpotify::User.find(current_user.uid)
-    me = RSpotify::User.new(
-      {
-        'credentials' => {
-           "token" => current_user.token
-           # "refresh_token" => self.credentials["refresh_token"],
-           # "access_refresh_callback" => callback_proc
-        },
-        'id' => current_user.uid
-      })
-    @playlists = me.playlists(limit: 50, offset: 0) #=> (Playlist array)
+    @playlists = current_user.playlists #=> (Playlist array)
 
   # ----------------------------- A ---------------------------------
   # ---Trying to access the artists from all the playlists' tracks --
   # @playlists.last.tracks.last.artists #=> returns an array
-      @all_artists = []
-      @artist_names = []
-    if params[:playlist_id].present?
-      @playlist = RSpotify::Playlist.find(current_user.uid, params[:playlist_id])
-      @playlist.tracks.each do |track|
-        @all_artists << track.artists
-        @all_artists.each do |artist|
-          @artist_names << artist[0].name
-        end
-      end
-    else
-      @playlists.each do |playlist|
-        @tracks = playlist.tracks
-        @tracks.each do |track|
-          @all_artists << track.artists
-          @all_artists.each do |artist|
-            @artist_names << artist[0].name
-          end
-        end
-      end
-    end
-      @unique_artists = @artist_names.uniq
+
+    @unique_artists = current_user.playlist_artist_names(params[:playlist_id])
 
     # -------- THE CODE IN THE VIEWS/GIGS/INDEX.HTML.ERB
     # <h3>ALL MY ARTISTS</h3>
@@ -52,9 +23,8 @@ class GigsController < ApplicationController
 
 # ------------------------------- B -------------------------------
 # ---------- Trying to get the top-artists of the user ------------
-    @top_artists = me.top_artists.map do |artist|
-      artist.name
-    end
+    @top_artists = current_user.top_artists
+
 
 # ------------------------------- C -------------------------------
 # ---- FILTERING THE GIGS vs all PL artists (@unique_artists) ----
