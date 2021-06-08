@@ -37,6 +37,9 @@ gem 'omniauth-oauth2', '~> 1.3.1'
 # Spotify wrapper
 gem 'rspotify'
 
+# PG SEARCH
+gem 'pg_search', '~> 2.3.0'
+
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
