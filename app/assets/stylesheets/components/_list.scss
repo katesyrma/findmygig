@@ -4,11 +4,13 @@
       text-decoration: none;
       color: black;
       transition: 0s font-weight background-color;
+      padding: 10px;
     }
     a:hover {
       font-weight: bold;
       transition-delay:50ms;
       background-color: #2CFA59;
+    }
 }
 
 .side-list {

@@ -29,6 +29,8 @@ import "bootstrap";
 // import { initSelect2 } from '../components/init_select2';
 
 import {initToggler} from "../components/toggle-playlist"
+// import {initListToggler} from "../components/toggle-playlist"
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:

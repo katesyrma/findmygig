@@ -1,12 +1,10 @@
 const initToggler = () => {
-  console.log("hello")
 
 const togglerThing = document.getElementById("toggler-thing");
 const artistBtn = document.getElementById("artist-btn");
 const playlistBtn = document.getElementById("playlist-btn");
 const playlistList = document.getElementById("playlist-list");
 const artistsList = document.getElementById("artists-list");
-console.log(playlistList)
 
 artistBtn.addEventListener('click', (event) => {
 
@@ -27,4 +25,18 @@ playlistBtn.addEventListener('click', (event) => {
 })
 }
 
-export {initToggler}
+// function for the beahaviour of the list items in the side-list
+
+// const initListToggler = () => {
+
+//   const listSide = document.querySelector(".list-side");
+
+//   listSide.addEventListener('click', (event) => {
+//     listSide.classList.add("green-active");
+//     listSide.classList.remove("green-active");
+//   })
+// }
+
+
+// export {initListToggler};
+export {initToggler};
