@@ -1,2 +1,3 @@
 class Gig < ApplicationRecord
 end
+
