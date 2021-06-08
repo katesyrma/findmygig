@@ -27,16 +27,16 @@ playlistBtn.addEventListener('click', (event) => {
 
 // function for the beahaviour of the list items in the side-list
 
-// const initListToggler = () => {
+const initListToggler = () => {
 
-//   const listSide = document.querySelector(".list-side");
+  const pList = document.getElementById("p-list");
 
-//   listSide.addEventListener('click', (event) => {
-//     listSide.classList.add("green-active");
-//     listSide.classList.remove("green-active");
-//   })
-// }
+  pList.addEventListener('click', (event) => {
+    pList.classList.remove("list-side");
+    pList.classList.add("green-stop")
+  })
+}
 
 
-// export {initListToggler};
+export {initListToggler};
 export {initToggler};

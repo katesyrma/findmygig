@@ -1,6 +1,3 @@
-  <% if @playlist_gigs.count == 0 %>
-    <%= render 'shared/no-gigs' %>
-  <% else %>
   <% @playlist_gigs.each do |gig| %>
   <div data-controller='remote'
   data-target='remote.wrapper'
@@ -19,5 +16,4 @@
   </div>
   <% end %>
 </div>
-<% end %>
 <% end %>

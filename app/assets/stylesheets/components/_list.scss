@@ -1,6 +1,6 @@
 .list-side {
   list-style: none;
-    a {
+    a p {
       text-decoration: none;
       color: black;
       transition: 0s font-weight background-color;
@@ -13,6 +13,10 @@
     }
 }
 
+.green-stop {
+  background-color: #2CFA59 !important;
+}
+
 .side-list {
   height: 80vh;
   margin-top: 10px;
@@ -21,6 +25,12 @@
   overflow: hidden;
   overflow-y: scroll;
   width: 300px;
+}
+
+.grey-out {
+    a {
+      color: grey;
+    }
 }
 
 .hide {
