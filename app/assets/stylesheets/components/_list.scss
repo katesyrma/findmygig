@@ -3,11 +3,12 @@
     a {
       text-decoration: none;
       color: black;
-      transition: 0s font-weight;
+      transition: 0s font-weight background-color;
     }
     a:hover {
       font-weight: bold;
-      transition-delay:100ms;
+      transition-delay:50ms;
+      background-color: #2CFA59;
     }
 }
 
