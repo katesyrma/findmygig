@@ -1,10 +1,10 @@
 .list-side {
   list-style: none;
-    a p {
+    a, p {
       text-decoration: none;
       color: black;
       transition: 0s font-weight background-color;
-      padding: 10px;
+      padding: 5px;
     }
     a:hover {
       font-weight: bold;
