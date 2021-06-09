@@ -1,3 +1,5 @@
+<%= render 'shared/footer' %>
+
 <div class="home-page-container" >
   <div class="homepage">
     <div class="home-page-content">
@@ -11,3 +13,20 @@
   <%=  link_to "**********", destroy_user_session_path, method: :delete, class: "logout" %>
 
 </div>
+
+<div class="box">
+  <div class="image-one"><img src="https://images.unsplash.com/photo-1547661198-888c249734e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt=""></div>
+  <p class="text-one">Connect your Spotify to see your Playlists and Top Artists</p>
+</div>
+
+<div class="box">
+  <p class="text-two">Search your Top Artists for the gigs you know, or choose a Playlist to discover the gigs you don't</p>
+  <div class="image-two"><img src="https://images.unsplash.com/photo-1557125785-9dd832cc42bb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt=""></div>
+</div>
+
+<div class="box">
+  <div class="image-three"><img src="https://images.unsplash.com/photo-1501612780327-45045538702b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2700&q=80" alt=""></div>
+  <p class="text-three">Select your gig and...... </p>
+</div>
+
+<div><button id="spotify-connect2"><i class="fab fa-spotify" id="spotify-icon"></i> <%= link_to "Connect with Spotify", user_spotify_omniauth_authorize_path %> </button></div>

@@ -7,7 +7,7 @@
   text-align: center;
   color: white;
   height: 100vh;
-  background-image: url(FMG_photo.jpg);
+  background-image: asset-url("FMG_photo.jpg");
   background-size: cover;
   filter: grayscale;
 }
@@ -37,7 +37,7 @@
 
 
 #spotify-connect {
-  position: fixed;
+  position: absolute;
   bottom: 8px;
   left: 16px;
   width: 350px;
@@ -59,3 +59,83 @@ a, a:hover, a:focus {
     text-decoration: none !important;
     color: unset;
 }
+
+.box {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.image-one {
+  width: 50%;
+  margin-top: 100px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.text-one {
+  width: 50%;
+  margin-top: 300px;
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.text-two {
+  width: 60%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 40px;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+.image-two {
+ width: 50%;
+ margin-top: -200px;
+ margin-bottom: -100px;
+
+ img {
+  width: 100%;
+  height: auto;
+ }
+}
+
+.image-three {
+  width: 60%;
+  margin-bottom: 100px;
+
+  img {
+  width: 100%;
+  height: auto;
+ }
+
+}
+
+.text-three {
+  width: 30%;
+  margin-top: 100px;
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+
+#spotify-connect2 {
+  position: center;
+  bottom: 8px;
+  left: 16px;
+  width: 600px;
+  font-weight: 400;
+  margin-bottom: 80px;
+  margin-left: 400px;
+  font-size: 30px;
+  border-radius: 30px;
+  padding: 20px;
+  color: #06E336;
+  border: none;
+  opacity: 0.8;
+  background-color: white;
+}
+
