@@ -3,7 +3,7 @@
       <div id="playlist-list" class="show">
       <% @playlists.each do |playlist| %>
 
-      <p class="list-side" id="p-list"><= link_to playlist.name, gigs_path(playlist_id: playlist.id) %></p>
+      <p class="list-side" id="p-list"><%= link_to playlist.name, gigs_path(playlist_id: playlist.id) %></p>
 
       <% end %>
       </div>
