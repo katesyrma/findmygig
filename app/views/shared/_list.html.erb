@@ -10,7 +10,7 @@
 
       <div id="artists-list" class="hide">
       <% @top_artists.each do |artist| %>
-        <p class="list-side"><%= link_to artist, gigs_path(params[artist_name: artist]),:class => params[:artist_name] == artist ? 'green-active' : ''  %></p>
+        <p class="list-side"><%= link_to artist, gigs_path(artist_name: artist),:class => :artist_name == artist ? 'green-active' : ''  %></p>
       <% end %>
       </div>
 
