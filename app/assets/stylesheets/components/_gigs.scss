@@ -12,23 +12,17 @@
 
 .no-gigs {
   display: flex;
-  flex-direction: column;
   height: min-content;
+  justify-content: center;
   width: 900px;
   margin-right: 10px;
   margin-top: 10px;
   height: 80vh;
    p {
-    position: relative;
     margin-top: 100px;
-    text-align: center;
-    color: grey;
+    color: black;
    }
    img {
-    position: absolute;
-    filter: grayscale(50%);
-    opacity: 0.5;
-    left: 55%;
     width: 200px;
    }
 }

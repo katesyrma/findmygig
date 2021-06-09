@@ -3,17 +3,18 @@
       <div id="playlist-list" class="show">
       <% @playlists.each do |playlist| %>
 
-      <p class="list-side"><%= link_to playlist.name, gigs_path(playlist_id: playlist.id), id: "p-list"%></p>
+      <p class="list-side" id="p-list"><= link_to playlist.name, gigs_path(playlist_id: playlist.id) %></p>
+
       <% end %>
       </div>
 
       <div id="artists-list" class="hide">
       <% @top_artists.each do |artist| %>
-        <p class="list-side"><%= artist %></p>
+        <p class="list-side"><%= link_to artist, gigs_path(params[:artist]) %></p>
       <% end %>
       </div>
 
 </div>
 
-
 <!-- 'grey-out' if playlist.gig.present? -->
+

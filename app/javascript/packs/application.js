@@ -28,7 +28,7 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 
-import {initToggler} from "../components/toggle-playlist";
+// import {initToggler} from "../components/toggle-playlist";
 // import {initAlgolia} from "./init_algolia_places"
 import {initFlatpickr} from "../plugins/flatpickr";
 
@@ -38,6 +38,7 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   initToggler();
+  initListToggler();
   // initAlgolia();
   initFlatpickr();
 });

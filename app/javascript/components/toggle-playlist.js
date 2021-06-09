@@ -32,8 +32,10 @@ const initListToggler = () => {
   const pList = document.getElementById("p-list");
 
   pList.addEventListener('click', (event) => {
+    console.log("hello from toggler")
     pList.classList.remove("list-side");
-    pList.classList.add("green-stop")
+    pList.classList.remove("green-active")
+    console.log(pList.classList)
   })
 }
 
