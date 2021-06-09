@@ -47,7 +47,7 @@
   font-size: 25px;
   border-radius: 30px;
   padding: 20px;
-  color: #06E336;
+  color: #2CFA59;
   border: none;
   opacity: 0.8;
   background-color: black;
@@ -67,19 +67,19 @@ a, a:hover, a:focus {
 }
 
 .image-one {
-  width: 50%;
+  width: 40%;
   margin-top: 100px;
 
   img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 100%;
   }
 }
 
 .text-one {
   width: 50%;
   margin-top: 300px;
-  font-size: 40px;
+  font-size: 45px;
   margin-left: 40px;
 }
 
@@ -87,13 +87,13 @@ a, a:hover, a:focus {
   width: 60%;
   margin-top: 80px;
   margin-bottom: 80px;
-  font-size: 40px;
-  margin-left: 40px;
+  font-size: 45px;
+  margin-left: 60px;
   margin-right: 30px;
 }
 
 .image-two {
- width: 50%;
+ width: 60%;
  margin-top: -200px;
  margin-bottom: -100px;
 
@@ -117,7 +117,7 @@ a, a:hover, a:focus {
 .text-three {
   width: 30%;
   margin-top: 100px;
-  font-size: 40px;
+  font-size: 45px;
   margin-left: 40px;
 }
 
@@ -128,14 +128,18 @@ a, a:hover, a:focus {
   left: 16px;
   width: 600px;
   font-weight: 400;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   margin-left: 400px;
-  font-size: 30px;
+  font-size: 35px;
   border-radius: 30px;
   padding: 20px;
-  color: #06E336;
+  color: #2CFA59;
   border: none;
   opacity: 0.8;
   background-color: white;
+}
+
+#green-word {
+  color: #2CFA59;
 }
 
