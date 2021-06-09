@@ -25,20 +25,4 @@ playlistBtn.addEventListener('click', (event) => {
 })
 }
 
-// function for the beahaviour of the list items in the side-list
-
-const initListToggler = () => {
-
-  const pList = document.getElementById("p-list");
-
-  pList.addEventListener('click', (event) => {
-    console.log("hello from toggler")
-    pList.classList.remove("list-side");
-    pList.classList.remove("green-active")
-    console.log(pList.classList)
-  })
-}
-
-
-export {initListToggler};
 export {initToggler};
