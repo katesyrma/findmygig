@@ -8,7 +8,6 @@ class GigsController < ApplicationController
 
     # me = RSpotify::User.find(current_user.uid)
     @playlists = current_user.playlists #=> (Playlist array)
-
   # ----------------------------- A ---------------------------------
   # ---Trying to access the artists from all the playlists' tracks --
   # @playlists.last.tracks.last.artists #=> returns an array
@@ -18,7 +17,6 @@ class GigsController < ApplicationController
 # ------------------------------- B -------------------------------
 # ---------- Trying to get the top-artists of the user ------------
     @top_artists = current_user.top_artists
-
 
 # ------------------------------- C -------------------------------
 # ---- FILTERING THE GIGS vs all PL artists (@unique_artists) ----
