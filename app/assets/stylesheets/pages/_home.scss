@@ -7,7 +7,7 @@
   text-align: center;
   color: white;
   height: 100vh;
-  background-image: url(FMG_photo.jpg);
+  background-image: asset-url("FMG_photo.jpg");
   background-size: cover;
   filter: grayscale;
 }
