@@ -10,22 +10,22 @@ require 'csv'
 
 Gig.destroy_all
 
-csv_text = File.read(Rails.root.join('lib', 'seeds', 'gig_seeds.csv'))
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'final_seed.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 
 csv.each do |row|
   t = Gig.new
 
-    t.artist_name = row['Artist Name']
-    t.city = row['City']
-    t.country = row['Country']
-    t.ticket_price = row['Ticket Price']
-    t.description = row['Description']
-    t.date = row['Date']
-    t.venue = row['Venue']
-    t.venue_location = row['Venue Location']
-    t.time = row['Time']
-    t.image_url = row['Image URL']
+    t.artist_name = row['artist_name']
+    t.city = row['city']
+    t.country = row['country']
+    t.ticket_price = row['ticket_price']
+    t.description = row['description']
+    t.date = row['date']
+    t.venue = row['venue']
+    t.venue_location = row['venue_location']
+    t.time = row['time']
+    t.image_url = row['image_url']
 
     t.save
   end
