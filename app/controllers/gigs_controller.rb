@@ -4,7 +4,7 @@ class GigsController < ApplicationController
 
   def index
 
-    @gigs = Gig.all
+    @gigs = Gig.all.sort_by { |gig| gig.date }
 
     # me = RSpotify::User.find(current_user.uid)
     @playlists = current_user.playlists #=> (Playlist array)
@@ -31,12 +31,12 @@ class GigsController < ApplicationController
 
     @query = "#{params[:city]} #{params[:artist_name]}"
     if @query.present?
-      @playlist_gigs = Gig.search_by_city_and_artist_name(@query)
+      @playlist_gigs = Gig.search_by_city_and_artist_name(@query).sort_by { |gig| gig.date }
     elsif params[:search].present?
-      @playlist_gigs = Gig.where('date BETWEEN ? AND ?', params[:search][:starts_at].split(" to ")[0], params[:search][:starts_at].split(" to ")[1])
+      @playlist_gigs = Gig.where('date BETWEEN ? AND ?', params[:search][:starts_at].split(" to ")[0], params[:search][:starts_at].split(" to ")[1]).sort_by { |gig| gig.date }
       # Comment.where('created_at BETWEEN ? AND ?', @selected_date.beginning_of_day, @selected_date.end_of_day)
     else
-      @playlist_gigs = Gig.where(artist_name: @unique_artists)
+      @playlist_gigs = Gig.where(artist_name: @unique_artists).sort_by { |gig| gig.date }
     end
 
     # @playlist_gigs = Gig.where(artist_name: @unique_artists)
@@ -44,7 +44,7 @@ class GigsController < ApplicationController
 # ------------------------------ D --------------------------------
 # ---- FILTERING the gigs vs top-artists (@top_artists) -----------
     # @top_gigs = []
-    @top_gigs = Gig.where(artist_name: @top_artists)
+    @top_gigs = Gig.where(artist_name: @top_artists).sort_by { |gig| gig.date }
 
 # ------------------------------ E --------------------------------
 # ---------------------- PHOTO of the user ------------------------

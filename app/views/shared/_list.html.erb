@@ -10,7 +10,7 @@
 
       <div id="artists-list" class="hide">
       <% @top_artists.each do |artist| %>
-        <p class="list-side"><%= link_to artist, gigs_path(params[:artist]) %></p>
+        <p class="list-side"><%= link_to artist, gigs_path(params[artist_name: artist]) %></p>
       <% end %>
       </div>
 
