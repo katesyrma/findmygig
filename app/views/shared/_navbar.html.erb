@@ -1,5 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "FINDMYGIG", root_path, class: "navbar-brand" %>
+  <%= link_to "FINDMYGIG", gigs_path, class: "navbar-brand" %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -10,7 +10,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active" id="user_name">
-          <span class="hi">Hello</span> <%= current_user.uid %>!
+          <span class="hi">Hello,</span> <%= current_user.uid %>!
         </li>
         <li class="nav-item dropdown">
           <div id="avatar-background">
