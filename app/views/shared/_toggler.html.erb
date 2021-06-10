@@ -1,7 +1,17 @@
 <div class="toggler" id="toggler-thing">
 
-    <button class="top green-active" id="playlist-btn">My Playlists</button>
+<% if !params[:playlist_id].present? && !params[:artist_name].present?%>
 
-    <button class="play" id="artist-btn">My Top Artists</button>
+  <button class="top green-active <%= params[:playlist_id] ? 'green-active' : 'show' %>" id="playlist-btn">My Playlists</button>
+
+  <button class="play <%= params[:artist_name] ? 'green-active' : 'show' %>" id="artist-btn">My Top Artists</button>
+
+<% else %>
+
+  <button class="top <%= params[:playlist_id] ? 'green-active' : 'show' %>" id="playlist-btn">My Playlists</button>
+
+  <button class="play <%= params[:artist_name] ? 'green-active' : 'show' %>" id="artist-btn">My Top Artists</button>
+
+<% end %>
 
 </div>

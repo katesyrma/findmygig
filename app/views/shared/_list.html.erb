@@ -1,21 +1,61 @@
 <div class="side-list">
 
-      <div id="playlist-list" class="show">
-      <% @playlists.each do |playlist| %>
+<% if !params[:playlist_id].present? && !params[:artist_name].present? %>
 
-      <p class="list-side" id="p-list"><%= link_to playlist.name, gigs_path(playlist_id: playlist.id),:class => params[:playlist_id] == playlist.id ? 'green-active' : '' %></p>
+  <div id="playlist-list" class="show <%= params[:playlist_id] ? 'show' : 'hide' %>">
 
-      <% end %>
-      </div>
+    <% @playlists.each do |playlist| %>
 
-      <div id="artists-list" class="hide">
-      <% @top_artists.each do |artist| %>
-        <p class="list-side"><%= link_to artist, gigs_path(artist_name: artist),:class => :artist_name == artist ? 'green-active' : ''  %></p>
-      <% end %>
-      </div>
+    <p class="list-side" id="p-list">
+
+      <%= link_to playlist.name, gigs_path(playlist_id: playlist.id),:class => params[:playlist_id] == playlist.id ? 'green-active' : '' %>
+
+    </p>
+
+    <% end %>
+  </div>
+
+  <div id="artists-list" class="<%= params[:artist_name] ? 'show' : 'hide' %>">
+    <% @top_artists.each do |artist| %>
+    <p class="list-side">
+
+
+      <%= link_to artist, gigs_path(artist_name: artist), :class => params[:artist_name] == artist ? 'green-active' : '' %>
+
+    </p>
+    <% end %>
+  </div>
+
+<% else %>
+
+<div id="playlist-list" class=" <%= params[:playlist_id] ? 'show' : 'hide' %>">
+    <% @playlists.each do |playlist| %>
+
+    <p class="list-side" id="p-list">
+
+      <%= link_to playlist.name, gigs_path(playlist_id: playlist.id),:class => params[:playlist_id] == playlist.id ? 'green-active' : '' %>
+
+    </p>
+
+    <% end %>
+  </div>
+
+  <div id="artists-list" class="<%= params[:artist_name] ? 'show' : 'hide' %>">
+    <% @top_artists.each do |artist| %>
+    <p class="list-side">
+
+
+      <%= link_to artist, gigs_path(artist_name: artist), :class => params[:artist_name] == artist ? 'green-active' : '' %>
+
+    </p>
+    <% end %>
+  </div>
+
+<% end %>
 
 </div>
 
 <!-- 'grey-out' if playlist.gig.present? -->
 
 
+<!-- ,:class => :artist_name == artist ? 'green-active' : ''   -->
