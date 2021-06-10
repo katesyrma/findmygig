@@ -45,12 +45,13 @@
   margin-bottom: 80px;
   margin-left: 30px;
   font-size: 25px;
-  border-radius: 30px;
+  border-radius: 100px;
   padding: 20px;
   color: #2CFA59;
   border: none;
   opacity: 0.8;
   background-color: black;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 
 
@@ -81,6 +82,7 @@ a, a:hover, a:focus {
   margin-top: 300px;
   font-size: 45px;
   margin-left: 40px;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
 }
 
 .text-two {
@@ -135,11 +137,12 @@ a, a:hover, a:focus {
   padding: 20px;
   color: #2CFA59;
   border: none;
-  opacity: 0.8;
   background-color: white;
+  text-shadow: 1px rgba(0,0,0,.1);
 }
 
 #green-word {
   color: #2CFA59;
+  text-shadow: 1px rgba(0,0,0,.1);
 }
 
