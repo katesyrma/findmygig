@@ -1,4 +1,5 @@
-meta_product_name: "findmygig"
-meta_title: "findmygig - The GIG is up"
-meta_description: "findmygis allows you to stay updated about the gigs of those artists you added to your playlists. With no more hassle you'll have access to information and tickets of the concerts of your niche artists that your cool playlists have"
-meta_image: "cover.png" # should exist in `app/assets/images/`
+meta_product_name: "findmygig" meta_title: "findmygig - The GIG is up"
+meta_description: "findmygig allows you to stay updated about the gigs of those
+artists you added to your playlists. With no more hassle you'll have access to
+information and tickets of the concerts of your niche artists that your cool
+playlists have" meta_image: "cover.png" # should exist in `app/assets/images/`
