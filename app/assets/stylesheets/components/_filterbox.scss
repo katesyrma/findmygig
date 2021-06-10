@@ -38,6 +38,10 @@
   border: 1px solid rgb(233, 236, 239);
 }
 
+#artist_name:focus-visible, #city:focus-visible {
+  outline: #2CFA59 auto 1px !important;
+}
+
 .start-filter {
   height: 40px;
   border: solid 1px -internal-light-dark(black, white);
@@ -81,4 +85,10 @@
   a {
     padding: 23px;
   }
+}
+
+.form-control:focus{
+  border-color: #2CFA59;
+  outline: #2CFA59 auto 1px !important;
+  box-shadow: none;
 }
