@@ -11,15 +11,20 @@
 
 .no-gigs {
   display: flex;
+  flex-direction: column;
   height: min-content;
-  justify-content: center;
+  align-items: center;
   width: 900px;
   margin-right: 10px;
   margin-top: 10px;
   height: 80vh;
    p {
+    font-family: Bungee Hairline;
+    font-weight: bold;
+    font-size: 30px;
     margin-top: 100px;
     color: black;
+    text-align: center;
    }
    img {
     width: 200px;

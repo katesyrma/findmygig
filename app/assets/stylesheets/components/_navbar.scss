@@ -1,6 +1,12 @@
 .navbar {
   justify-content: space-between;
   background: white;
+  margin-right: 50px;
+    a {
+      font-family: Bungee Outline;
+      font-size: 100px;
+      padding-left: 5px;
+    }
 }
 
 .navbar .navbar-collapse {
@@ -14,6 +20,14 @@
 }
 
 #user_name {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
+.dropdown-menu {
+  a {
+    padding-left: 5px;
+    font-size: 15px;
+    font-family: Roboto;
+  }
+
+}

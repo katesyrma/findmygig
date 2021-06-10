@@ -13,6 +13,7 @@ artistBtn.addEventListener('click', (event) => {
   playlistList.classList.add("hide")
   playlistList.classList.remove("show")
   artistsList.classList.add("show")
+  console.log(artistsList.classList)
 })
 
 playlistBtn.addEventListener('click', (event) => {
@@ -22,6 +23,8 @@ playlistBtn.addEventListener('click', (event) => {
   artistsList.classList.add("hide")
   artistsList.classList.remove("show")
   playlistList.classList.add("show")
+  console.log(playlistList.classList)
+
 })
 }
 
