@@ -82,7 +82,7 @@ a, a:hover, a:focus {
   margin-top: 300px;
   font-size: 45px;
   margin-left: 40px;
-  text-shadow: 1px 1px rgba(0,0,0,.1);
+
 }
 
 .text-two {
@@ -138,11 +138,16 @@ a, a:hover, a:focus {
   color: #2CFA59;
   border: none;
   background-color: white;
-  text-shadow: 1px rgba(0,0,0,.1);
 }
 
 #green-word {
-  color: #2CFA59;
-  text-shadow: 1px rgba(0,0,0,.1);
+  color: black;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
+  width: 350px;
+  padding-left: 10px;
+  padding-right: 10px;
+  // padding-top: 2px;
+  padding-bottom: 2px;
+  background-color:#2CFA59;
 }
 
