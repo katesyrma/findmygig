@@ -10,7 +10,7 @@
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active" id="user_name">
-          <strong>Hi</strong> <%= current_user.uid %>!
+          <span class="hi">Hello</span> <%= current_user.uid %>!
         </li>
         <li class="nav-item dropdown">
           <div id="avatar-background">

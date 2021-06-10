@@ -54,7 +54,7 @@ template() {
   <div data-target='remote.container'>
     <div class='modal-wrapper' data-target='remote.background' data-action='click->remote#closeBackground'>
       <div class='modal-content'>
-      <button data-action='click->remote#close' class='close-button'>Close</button>
+      <button data-action='click->remote#close' class='close-button'>X</button>
       <div data-target='remote.content' >
       </div>
       </div>
