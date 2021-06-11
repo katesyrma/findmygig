@@ -126,27 +126,28 @@ a, a:hover, a:focus {
 
 #spotify-connect2 {
   position: center;
-  bottom: 8px;
   left: 16px;
   width: 600px;
   font-weight: 400;
-  margin-bottom: 20px;
-  margin-left: 400px;
-  font-size: 35px;
-  border-radius: 30px;
-  padding: 20px;
-  color: #2CFA59;
+  margin-bottom: 30px;
+  margin-left: 550px;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  width: 350px;
   border: none;
-  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color:rgba(44, 250, 89, 0.4);
+
 }
 
 #green-word {
   color: black;
-  text-shadow: 1px 1px rgba(0,0,0,.1);
   width: 350px;
   padding-left: 10px;
   padding-right: 10px;
-  // padding-top: 2px;
   padding-bottom: 2px;
   background-color:#2CFA59;
 }
