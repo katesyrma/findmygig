@@ -10,7 +10,7 @@
       <h2><%= @gig.venue %><h2> <%= @gig.city %> | <%= @gig.country %></h2></h2>
       <h2><%= @gig.date.strftime("%a, %b %d %Y") %> | <%= @gig.time.strftime(" %l:%M ") %>PM</h2>
       <h2 id="price">Price: <%= @gig.ticket_price %>€</h2>
-      <%= link_to "Tickets", "https://www.ticketmaster.se/event/jon-hopkins-polarity-tours-2021-biljetter/557455?language=en-us", :target => "_blank", class: "btn"%>
+      <%= link_to "Tickets", "https://www.ticketmaster.nl/event/christian-loffler-live-tickets/243427?language=en-us", :target => "_blank", class: "btn"%>
 
       <p><%= @gig.description%></p>
     </div>
